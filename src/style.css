@@ -15,3 +15,15 @@ body {
 @theme {
   --color-darkblue: #212b58;
 }
+
+@layer components {
+  .hero-height {
+    min-height: 80vh;
+  }
+
+  @media (min-width: 768px) {
+    .hero-height {
+      min-height: 90vh;
+    }
+  }
+}

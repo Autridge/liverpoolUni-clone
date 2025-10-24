@@ -18,7 +18,7 @@
     <title>liverpooluni-clone</title>
   </head>
   <body>
-    <section class="relative min-h-screen bg-gray-900">
+    <section class="relative min-h-screen bg-gray-900 lg:pl-16">
       <!-- Background Image -->
       <div
         class="absolute inset-0 bg-cover bg-right bg-no-repeat"
@@ -27,40 +27,84 @@
 
       <!-- Overlay -->
       <div
-        class="absolute inset-0 bg-gradient-to-t from-black to-transparent"
+        class="md:hidden absolute inset-0 bg-gradient-to-t from-black to-transparent"
       ></div>
 
       <!-- Navigation -->
-      <nav class="absolute z-10 p-6">
+      <nav class="absolute z-10 p-6 w-full">
         <div class="container mx-auto">
           <img
             src="images/uol_logo.png"
             alt="University of Liverpool logo"
-            class="h-16"
+            class="h-16 lg:h-22 lg:-ml-96"
           />
 
           <!-- Mobile Navs -->
-          <div class="absolute top-6 -right-120 text-white font-extrabold">
+          <div class="md:hidden absolute top-6 -right-120 text-white font-extrabold">
             <div class="flex items-center gap-4">
               <i class="bi bi-search text-4xl"></i>
               <i class="bi bi-list text-6xl"></i>
             </div>
           </div>
         </div>
+
+           <!-- desktop Navs -->
+            <div class="hidden sm:block absolute left-20 -bottom-16 text-[1.7rem] ">
+              <ul class="text-white font-bold flex gap-8">
+                  <li class="hover:border-b-2"><a href="">Study <span><i class="bi bi-chevron-down ml-2"></i></span></a></li>
+                  <li class="hover:border-b-2"><a href="">Student life <span><i class="bi bi-chevron-down ml-2"></i></span></a></li>
+                  <li class="hover:border-b-2"><a href="">Research and innovation <span><i class="bi bi-chevron-down ml-2"></i></span></a></li>
+                  <li class="hover:border-b-2"><a href="">Global <span><i class="bi bi-chevron-down ml-2"></i></span></a></li>
+                  <li class="hover:border-b-2"><a href="">About us <span><i class="bi bi-chevron-down ml-2"></i></span></a></li>
+            </ul>
+            </div>
+                <!-- quick links  -->
+            <div class="hidden sm:block absolute right-44 top-16 text-[1.4rem]">
+              <ul class="text-white flex gap-8">
+                  <li class="hover:border-b-2"><a href="">News</a></li>
+                  <li class="hover:border-b-2"><a href="">Jobs</a></li>
+                  <li class="hover:border-b-2"><a href="">Donate</a></li>
+                  <li class="hover:border-b-2"><a href="">A-Z</a></li>
+                  <li class="hover:border-b-2"><a href="">Alumni</a></li>
+                  <li class="hover:border-b-2"><a href="">Staff</a></li>
+                  <li class="hover:border-b-2"><a href="">Students</a></li>
+            </ul>
+            </div>
+
+                <!-- search  -->
+                 <div class="hidden sm:block absolute right-44 top-44 text-[1.4rem]">
+              <ul class="text-white flex gap-8">
+                  <li c><a href=""> <i class="bi bi-search text-xl pr-4"></i> <span class="hover:border-b-2 text-2xl">Search the site</span></a></li>
+               </ul>
+            </div>
       </nav>
 
-      <!-- Hero Text -->
-      <div class="relative z-20 p-6 container pb-24 top-148">
-        <div class="border-2 border-white mr-28">
-          <div class="text-white  flex justify-center font-extrabold text-5xl p-6 md:p-12">
-            <h1>MAKE 2026 YOUR YEAR</h1>
+      <!-- Hero Content -->
+       <div
+        class="relative z-20 container px-4 md:px-6 flex items-end hero-height pb-16 md:pb-24 lg:-top-24"
+      >
+        <div class="max-w-2xl text-white">
+          <div class="border-2 border-white p-4 md:p-8 ">
+            <h1 class="text-3xl md:text-4xl lg:text-8xl font-bold">
+              MAKE 2026 YOUR YEAR
+            </h1>
           </div>
 
-          <div class="border-2 border-white">
-          <div class="text-white text-[2rem] p-6 md:p-12">
-            <p>We offer a range of master's courses in business and management, allied health, computer science and engineering all available to start in January 2026.</p>
+          <div class="border-2 border-white p-4 md:p-8 mb-8">
+            <p class="text-lg md:text-xl lg:text-2xl">
+              We offer a range of master's courses in business and management,
+              allied health, computer science and engineering all available to
+              start in January 2026.
+            </p>
           </div>
-         </div>
+
+          <button
+            class="flex items-center text-lg md:text-xl lg:text-3xl hover:underline font-medium border-2 p-8"
+          >
+            Discover our January courses
+            <i class="bi bi-chevron-right ml-2"></i>
+          </button>
+        </div>
       </div>
             <!-- hero button -->
       <div class="text-white mt-10 border p-6 text-3xl flex justify-center mr-10">
@@ -145,6 +189,17 @@
              </div>
            </section>
 
+           <!-- Open Day section  -->
+            <section class="flex bg-[#EF426F] py-14 px-6">
+              <div class="w-1/4">
+                <img src="images/hands-illustration.png" alt="hands" class="size-32">
+              </div>
+              <div class="w-3/4 text-white mr-18">
+                <h1 class="font-bold text-6xl">Visit us on Open Day</h1>
+                <p class="mt-8 text-4xl">Explore our campus and learn more about what it's like to live and study at Liverpool with our Open Days.</p>
+                <button class="bg-darkblue p-6 text-3xl font-bold mt-18">Book an Open Day</button>
+              </div>
+            </section>
 
 
 
