@@ -18,13 +18,54 @@
     <title>liverpooluni-clone</title>
   </head>
   <body>
-    <section
-      class="relative min-h-screen flex items-center justify-center bg-900"
-    >
+    <section class="relative min-h-screen bg-gray-900">
+      <!-- Background Image -->
       <div
-        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        class="absolute inset-0 bg-cover bg-right bg-no-repeat"
         style="background-image: url(images/hero-image.jpg)"
       ></div>
+
+      <!-- Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black to-transparent"
+      ></div>
+
+      <!-- Navigation -->
+      <nav class="absolute z-10 p-6">
+        <div class="container mx-auto">
+          <img
+            src="images/uol_logo.png"
+            alt="University of Liverpool logo"
+            class="h-16"
+          />
+
+          <!-- Mobile Navs -->
+          <div class="absolute top-6 -right-120 text-white font-extrabold">
+            <div class="flex items-center gap-4">
+              <i class="bi bi-search text-4xl"></i>
+              <i class="bi bi-list text-6xl"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Text -->
+      <div class="relative z-20 p-6 container pb-24 top-140">
+        <div class="border-2 border-white mr-28">
+          <div class="text-white  flex justify-center font-extrabold text-5xl p-6 md:p-12">
+            <h1>MAKE 2026 YOUR YEAR</h1>
+          </div>
+
+          <div class="border-2 border-white">
+          <div class="text-white text-[2rem] p-6 md:p-12">
+            <p>We offer a range of master’s courses in business and management, allied health, computer science and engineering all available to start in January 2026.</p>
+          </div>
+         </div>
+      </div>
+            <!-- hero button -->
+      <div class="text-white mt-10 border p-6 text-3xl flex justify-center mr-10">
+            <button class="  "> Discover our January courses <span class="text-2xl"><i class="bi bi-chevron-right"></i></span></button>
+          </div>
     </section>
     <script type="module" src="/src/main.js"></script>
   </body>
