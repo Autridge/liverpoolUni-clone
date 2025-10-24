@@ -11,3 +11,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+@theme {
+  --color-darkblue: #212b58;
+}
